@@ -1,7 +1,6 @@
 FROM node:7
 
-RUN apt-get update \
-  && npm install -g @angular/cli@1.0.0 \
+RUN npm install -g @angular/cli@1.0.0 \
   && ng set --global packageManager=yarn \
   && npm cache clear
 
